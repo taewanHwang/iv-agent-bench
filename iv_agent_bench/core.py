@@ -1,3 +1,4 @@
+from contextlib import closing
 import hashlib
 import json
 import math
@@ -78,7 +79,7 @@ def import_hermes(run, db_path, session_id, after_id=None, through_id=None):
     if (run / "trajectory.json").exists():
         raise FileExistsError("Trajectory already imported; create a new run")
     db_path = Path(db_path).expanduser().resolve(strict=True)
-    with sqlite3.connect(db_path.as_uri() + "?mode=ro", uri=True) as db:
+    with closing(sqlite3.connect(db_path.as_uri() + "?mode=ro", uri=True)) as db:
         db.execute("PRAGMA query_only = ON")
         db.row_factory = sqlite3.Row
         session_columns = {r[1] for r in db.execute("PRAGMA table_info(sessions)")}

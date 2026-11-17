@@ -2,7 +2,7 @@
 
 개인형 AI 에이전트가 실제 생활에서 얼마나 유용하게 일하는지 평가하고, 그 실행 근거를 함께 분석하기 위한 프로젝트입니다.
 
-> 작성일: 2026-11-17. 현재 상태는 로컬 평가 기록·채점 도구 v0.1입니다. 실제 서비스 연결 및 모델 비교는 아직 실행하지 않았습니다. 월별 계획은 실험 결과에 따라 조정합니다.
+> 작성일: 2026-11-17. 현재 상태는 로컬 평가 기록·채점 도구 v0.1이며 첫 실제 고정 스냅샷 비교를 완료했습니다. 실시간 서비스 도구형 평가와 suite 자동 실행은 아직 미완료입니다. 월별 계획은 실험 결과에 따라 조정합니다.
 
 ## Executive Summary
 
@@ -12,9 +12,10 @@
 
 ## 개발 시작: 로컬 v0.1
 
-[로컬 실행 절차](docs/local-workflow.md) · [구현 현황과 다음 단계](docs/implementation-status.md) · [과제 후보의 출처](research/scenario-candidates.md)
+[실험 목록·버전 관리](experiments/README.md) · [첫 실험 b2c-v0.1.0](experiments/b2c-v0.1.0/README.md) · [로컬 실행 절차](docs/local-workflow.md) · [구현 현황과 다음 단계](docs/implementation-status.md) · [과제 후보의 출처](research/scenario-candidates.md)
 
 ```zsh
+python3 scripts/validate_experiments.py
 python3 -m unittest discover -s tests -v
 python3 -m iv_agent_bench demo
 ```
@@ -111,7 +112,7 @@ LLM judge는 최종 답변만이 아니라 전체 trajectory와 verifier 결과�
 
 ## 디렉터리
 
-현재 과제·CLI·검증기·문서가 생성되었습니다. 공유용 runs/와 analyses/는 실제 검토된 결과가 생길 때 추가합니다.
+현재 과제·CLI·검증기·문서가 생성되었습니다. 실험별 검토된 요약은 experiments/에서 버전으로 관리합니다. runs/와 analyses/는 필요 시 추가합니다.
 
 ```text
 AGENTS.md          # Codex 실행·분석 지침
@@ -120,6 +121,8 @@ research/          # 출처 목록과 시나리오 선정 근거
 tasks/             # 과제·데이터·허용 행동·판정 기준
 iv_agent_bench/    # 로컬 CLI·Hermes import·상태 verifier·judge 연결
 tests/             # 합성 데이터 기반 검증
+experiments/       # 실험 버전별 목적·coverage·집계·공유 범위
+scripts/           # 실험 레지스트리 정합성 검사
 runs/              # 검토된 공유본·설정·점수
 analyses/          # 작성자별 분석
 ```

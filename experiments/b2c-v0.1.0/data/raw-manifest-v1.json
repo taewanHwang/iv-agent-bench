@@ -1,0 +1,598 @@
+{
+  "schema_version": "1",
+  "experiment_version": "b2c-v0.1.0",
+  "data_revision": "v1",
+  "sharing_level": "summary-only",
+  "raw_data_uploaded": false,
+  "description": "Inventory and byte SHA-256 only. Local paths are storage locators, not downloadable GitHub links. Hashes permit later consistency checks if the owner independently grants access; they do not make withheld evidence verifiable.",
+  "artifacts": [
+    {
+      "run_id": "20261117T021020Z-070a2230",
+      "model": "gpt-6-luna",
+      "artifact": "manifest.json",
+      "access": "withheld-private",
+      "local_path": ".private/real-runs/20261117T021020Z-070a2230/manifest.json",
+      "bytes": 699,
+      "sha256_bytes": "dbee9bd1f4bc7483b03899015ec1e9823dcbc77eb1db0e093360e2f74302d0d1"
+    },
+    {
+      "run_id": "20261117T021020Z-070a2230",
+      "model": "gpt-6-luna",
+      "artifact": "task.json",
+      "access": "withheld-private",
+      "local_path": ".private/real-runs/20261117T021020Z-070a2230/task.json",
+      "bytes": 3530,
+      "sha256_bytes": "39cdbc7ed5125a6ac965ccb2ad9e9659db289559f1d01036b047572fd32b1801"
+    },
+    {
+      "run_id": "20261117T021020Z-070a2230",
+      "model": "gpt-6-luna",
+      "artifact": "trajectory.json",
+      "access": "withheld-private",
+      "local_path": ".private/real-runs/20261117T021020Z-070a2230/trajectory.json",
+      "bytes": 808786,
+      "sha256_bytes": "860dd6f087982cf1cd9c3085f72984b4461823dcfbfa9a3c5e587956b1da6e59"
+    },
+    {
+      "run_id": "20261117T021020Z-070a2230",
+      "model": "gpt-6-luna",
+      "artifact": "result.json",
+      "access": "withheld-private",
+      "local_path": ".private/real-runs/20261117T021020Z-070a2230/result.json",
+      "bytes": 816016,
+      "sha256_bytes": "ebad86322eb260a812dfaaf9777cc1ee8124878c31f2a31c3021a68c6886e24e"
+    },
+    {
+      "run_id": "20261117T021020Z-070a2230",
+      "model": "gpt-6-luna",
+      "artifact": "answer.md",
+      "access": "withheld-private",
+      "local_path": ".private/real-runs/20261117T021020Z-070a2230/answer.md",
+      "bytes": 3297,
+      "sha256_bytes": "b02e81abfed8af2d1203411a8f755a7d0d36c8f4da79787a9aee987116d78de4"
+    },
+    {
+      "run_id": "20261117T021020Z-070a2230",
+      "model": "gpt-6-luna",
+      "artifact": "request-01.json",
+      "access": "withheld-private",
+      "local_path": ".private/real-runs/20261117T021020Z-070a2230/request-01.json",
+      "bytes": 806630,
+      "sha256_bytes": "fb6f5b7d7b0840c74897d73ea007335a9197b54bebe7116d1128f998565fa8c3"
+    },
+    {
+      "run_id": "20261117T021020Z-070a2230",
+      "model": "gpt-6-luna",
+      "artifact": "attempts.json",
+      "access": "withheld-private",
+      "local_path": ".private/real-runs/20261117T021020Z-070a2230/attempts.json",
+      "bytes": 278,
+      "sha256_bytes": "da0c02c401315026f4aea0372ac2ee70bd9825d0f9b9a7ee5deb91f129c5f094"
+    },
+    {
+      "run_id": "20261117T021020Z-070a2230",
+      "model": "gpt-6-luna",
+      "artifact": "inspection.json",
+      "access": "withheld-private",
+      "local_path": ".private/real-runs/20261117T021020Z-070a2230/inspection.json",
+      "bytes": 487,
+      "sha256_bytes": "be7a667d235beb6f57492b869aafb3bebf13532787869848169b5a0236b98fbc"
+    },
+    {
+      "run_id": "20261117T021020Z-070a2230",
+      "model": "gpt-6-luna",
+      "artifact": "recording-integrity.json",
+      "access": "withheld-private",
+      "local_path": ".private/real-runs/20261117T021020Z-070a2230/recording-integrity.json",
+      "bytes": 731,
+      "sha256_bytes": "443c1c3be6fc817673b86d0ea94120f002ebf16375643af227de1a99de9458ff"
+    },
+    {
+      "run_id": "20261117T021020Z-070a2230",
+      "model": "gpt-6-luna",
+      "artifact": "worker-source.py",
+      "access": "withheld-private",
+      "local_path": ".private/real-runs/20261117T021020Z-070a2230/worker-source.py",
+      "bytes": 6994,
+      "sha256_bytes": "0458a449f1df10874ec94c564c0f0fc3b8971e0c2a934baee956fe60e12dbe16"
+    },
+    {
+      "run_id": "20261117T021020Z-070a2230",
+      "model": "gpt-6-luna",
+      "artifact": "operational-summary.json",
+      "access": "withheld-private",
+      "local_path": ".private/real-runs/20261117T021020Z-070a2230/operational-summary.json",
+      "bytes": 1432,
+      "sha256_bytes": "584d28a09519dba1a24f1afc1670641cdee46728e9e230af5e4d9baff6dd04bb"
+    },
+    {
+      "run_id": "20261117T021020Z-070a2230",
+      "model": "gpt-6-luna",
+      "artifact": "scores/judge-2167725fb02a.json",
+      "access": "withheld-private",
+      "local_path": ".private/real-runs/20261117T021020Z-070a2230/scores/judge-2167725fb02a.json",
+      "bytes": 2697,
+      "sha256_bytes": "83cde6304e699d122e9a8761427740c04d165ecaaec2817fb9702ca54415982c"
+    },
+    {
+      "run_id": "20261117T021020Z-070a2230",
+      "model": "gpt-6-luna",
+      "artifact": "scores/verifier-9905adce68e0.json",
+      "access": "withheld-private",
+      "local_path": ".private/real-runs/20261117T021020Z-070a2230/scores/verifier-9905adce68e0.json",
+      "bytes": 1174,
+      "sha256_bytes": "6af5dfa5f7910191e80a7bfb821a037e815166cfab8e3c703a4d1e53219029dc"
+    },
+    {
+      "run_id": "20261117T021020Z-070a2230",
+      "model": "gpt-6-luna",
+      "artifact": "judge/packet-f42c509b9c75.json",
+      "access": "withheld-private",
+      "local_path": ".private/real-runs/20261117T021020Z-070a2230/judge/packet-f42c509b9c75.json",
+      "bytes": 814333,
+      "sha256_bytes": "d22dfd09c152d0b1f6d281ef9fa8e46f7b3e97f40dc85b4d32de788b70ccd29d"
+    },
+    {
+      "run_id": "20261117T021020Z-95034163",
+      "model": "gpt-6.1-terra",
+      "artifact": "manifest.json",
+      "access": "withheld-private",
+      "local_path": ".private/real-runs/20261117T021020Z-95034163/manifest.json",
+      "bytes": 702,
+      "sha256_bytes": "c2a7720215d5b0c44b1b91fd3da5260e11abcb6c6862bbb57ee863408a6caf3d"
+    },
+    {
+      "run_id": "20261117T021020Z-95034163",
+      "model": "gpt-6.1-terra",
+      "artifact": "task.json",
+      "access": "withheld-private",
+      "local_path": ".private/real-runs/20261117T021020Z-95034163/task.json",
+      "bytes": 3530,
+      "sha256_bytes": "39cdbc7ed5125a6ac965ccb2ad9e9659db289559f1d01036b047572fd32b1801"
+    },
+    {
+      "run_id": "20261117T021020Z-95034163",
+      "model": "gpt-6.1-terra",
+      "artifact": "trajectory.json",
+      "access": "withheld-private",
+      "local_path": ".private/real-runs/20261117T021020Z-95034163/trajectory.json",
+      "bytes": 810847,
+      "sha256_bytes": "d44b757106a8a49936b807986e79024daf791a183484ab2ff3de0ef6e7c680ba"
+    },
+    {
+      "run_id": "20261117T021020Z-95034163",
+      "model": "gpt-6.1-terra",
+      "artifact": "result.json",
+      "access": "withheld-private",
+      "local_path": ".private/real-runs/20261117T021020Z-95034163/result.json",
+      "bytes": 822194,
+      "sha256_bytes": "b8c5f6dca36cd7d6232fecf5accd28a899b7ec91aadb65e7784874fd27418856"
+    },
+    {
+      "run_id": "20261117T021020Z-95034163",
+      "model": "gpt-6.1-terra",
+      "artifact": "answer.md",
+      "access": "withheld-private",
+      "local_path": ".private/real-runs/20261117T021020Z-95034163/answer.md",
+      "bytes": 5338,
+      "sha256_bytes": "c9a0abc4e1dffd8e187df0789be9af03c72db181b4326307f09595aea069d1d9"
+    },
+    {
+      "run_id": "20261117T021020Z-95034163",
+      "model": "gpt-6.1-terra",
+      "artifact": "request-01.json",
+      "access": "withheld-private",
+      "local_path": ".private/real-runs/20261117T021020Z-95034163/request-01.json",
+      "bytes": 806636,
+      "sha256_bytes": "9a5b720b0e20d19eafcb2c1646e1a99c328618c679b4ee25ad2d7f1e95401d24"
+    },
+    {
+      "run_id": "20261117T021020Z-95034163",
+      "model": "gpt-6.1-terra",
+      "artifact": "attempts.json",
+      "access": "withheld-private",
+      "local_path": ".private/real-runs/20261117T021020Z-95034163/attempts.json",
+      "bytes": 281,
+      "sha256_bytes": "5fa16e7c49ad4523e5a77910c2ccc99b67ff5269cc2a707f93b49aa5775fa16e"
+    },
+    {
+      "run_id": "20261117T021020Z-95034163",
+      "model": "gpt-6.1-terra",
+      "artifact": "inspection.json",
+      "access": "withheld-private",
+      "local_path": ".private/real-runs/20261117T021020Z-95034163/inspection.json",
+      "bytes": 490,
+      "sha256_bytes": "716b0c6347abf4fb072026823f54da4fcb280b70ed99d29aabd2699fc59d2703"
+    },
+    {
+      "run_id": "20261117T021020Z-95034163",
+      "model": "gpt-6.1-terra",
+      "artifact": "recording-integrity.json",
+      "access": "withheld-private",
+      "local_path": ".private/real-runs/20261117T021020Z-95034163/recording-integrity.json",
+      "bytes": 731,
+      "sha256_bytes": "443c1c3be6fc817673b86d0ea94120f002ebf16375643af227de1a99de9458ff"
+    },
+    {
+      "run_id": "20261117T021020Z-95034163",
+      "model": "gpt-6.1-terra",
+      "artifact": "worker-source.py",
+      "access": "withheld-private",
+      "local_path": ".private/real-runs/20261117T021020Z-95034163/worker-source.py",
+      "bytes": 6994,
+      "sha256_bytes": "0458a449f1df10874ec94c564c0f0fc3b8971e0c2a934baee956fe60e12dbe16"
+    },
+    {
+      "run_id": "20261117T021020Z-95034163",
+      "model": "gpt-6.1-terra",
+      "artifact": "operational-summary.json",
+      "access": "withheld-private",
+      "local_path": ".private/real-runs/20261117T021020Z-95034163/operational-summary.json",
+      "bytes": 1437,
+      "sha256_bytes": "71ed55abc4560315678f54375db9a9758ee84a949ea9aeecc2df6aed2ab9b768"
+    },
+    {
+      "run_id": "20261117T021020Z-95034163",
+      "model": "gpt-6.1-terra",
+      "artifact": "scores/judge-7a5bfe1b7816.json",
+      "access": "withheld-private",
+      "local_path": ".private/real-runs/20261117T021020Z-95034163/scores/judge-7a5bfe1b7816.json",
+      "bytes": 2799,
+      "sha256_bytes": "706c1774b5040c450ea1024bed40ac9e56b1c8adb91c5347650917410af7d424"
+    },
+    {
+      "run_id": "20261117T021020Z-95034163",
+      "model": "gpt-6.1-terra",
+      "artifact": "scores/verifier-d65d0927354e.json",
+      "access": "withheld-private",
+      "local_path": ".private/real-runs/20261117T021020Z-95034163/scores/verifier-d65d0927354e.json",
+      "bytes": 1174,
+      "sha256_bytes": "dfbcfdf98263a2e4bc9a031c7c464e5877b570fc5214068e4236debe12dea125"
+    },
+    {
+      "run_id": "20261117T021020Z-95034163",
+      "model": "gpt-6.1-terra",
+      "artifact": "judge/packet-3a9c26549576.json",
+      "access": "withheld-private",
+      "local_path": ".private/real-runs/20261117T021020Z-95034163/judge/packet-3a9c26549576.json",
+      "bytes": 816389,
+      "sha256_bytes": "1bbec467f7a18cae870c8e22fda2cbff3b9cb0cdd6c1718b15c6dd1d41f6c9ee"
+    },
+    {
+      "run_id": "20261117T021020Z-dcbd8543",
+      "model": "solar-mini-4-5-preview",
+      "artifact": "manifest.json",
+      "access": "withheld-private",
+      "local_path": ".private/real-runs/20261117T021020Z-dcbd8543/manifest.json",
+      "bytes": 734,
+      "sha256_bytes": "d07857612da327b56bdd8be5ca7d0062af01d58bce7d8cd191fba61151cef77c"
+    },
+    {
+      "run_id": "20261117T021020Z-dcbd8543",
+      "model": "solar-mini-4-5-preview",
+      "artifact": "task.json",
+      "access": "withheld-private",
+      "local_path": ".private/real-runs/20261117T021020Z-dcbd8543/task.json",
+      "bytes": 3530,
+      "sha256_bytes": "39cdbc7ed5125a6ac965ccb2ad9e9659db289559f1d01036b047572fd32b1801"
+    },
+    {
+      "run_id": "20261117T021020Z-dcbd8543",
+      "model": "solar-mini-4-5-preview",
+      "artifact": "trajectory.json",
+      "access": "withheld-private",
+      "local_path": ".private/real-runs/20261117T021020Z-dcbd8543/trajectory.json",
+      "bytes": 810370,
+      "sha256_bytes": "7050a77ae245b76d3eafd29e3e92130223b81ef166923a97cf2ddd79c64ba49d"
+    },
+    {
+      "run_id": "20261117T021020Z-dcbd8543",
+      "model": "solar-mini-4-5-preview",
+      "artifact": "result.json",
+      "access": "withheld-private",
+      "local_path": ".private/real-runs/20261117T021020Z-dcbd8543/result.json",
+      "bytes": 815453,
+      "sha256_bytes": "2d8e7eceacc924ee386e85f855c4669f9cb805f7d7dcd04dd8b40dc8000f1260"
+    },
+    {
+      "run_id": "20261117T021020Z-dcbd8543",
+      "model": "solar-mini-4-5-preview",
+      "artifact": "answer.md",
+      "access": "withheld-private",
+      "local_path": ".private/real-runs/20261117T021020Z-dcbd8543/answer.md",
+      "bytes": 4850,
+      "sha256_bytes": "155ceac533e501ae2d553d92f0168b89181a2c34613aaac3d9851bc655926cc6"
+    },
+    {
+      "run_id": "20261117T021020Z-dcbd8543",
+      "model": "solar-mini-4-5-preview",
+      "artifact": "request-01.json",
+      "access": "withheld-private",
+      "local_path": ".private/real-runs/20261117T021020Z-dcbd8543/request-01.json",
+      "bytes": 806466,
+      "sha256_bytes": "67820f40b97f362b5cb91b778c8787db5d8565543c0a227626e2bab364f85872"
+    },
+    {
+      "run_id": "20261117T021020Z-dcbd8543",
+      "model": "solar-mini-4-5-preview",
+      "artifact": "attempts.json",
+      "access": "withheld-private",
+      "local_path": ".private/real-runs/20261117T021020Z-dcbd8543/attempts.json",
+      "bytes": 284,
+      "sha256_bytes": "52eca1c264fb20f2a37629205c696b8d06310ed54f477b1bcfc9c850fd3a7fcc"
+    },
+    {
+      "run_id": "20261117T021020Z-dcbd8543",
+      "model": "solar-mini-4-5-preview",
+      "artifact": "inspection.json",
+      "access": "withheld-private",
+      "local_path": ".private/real-runs/20261117T021020Z-dcbd8543/inspection.json",
+      "bytes": 474,
+      "sha256_bytes": "2598387e5509c3f7fb6239f46d1970097317de16ee16b9519b13a57843e00c63"
+    },
+    {
+      "run_id": "20261117T021020Z-dcbd8543",
+      "model": "solar-mini-4-5-preview",
+      "artifact": "recording-integrity.json",
+      "access": "withheld-private",
+      "local_path": ".private/real-runs/20261117T021020Z-dcbd8543/recording-integrity.json",
+      "bytes": 731,
+      "sha256_bytes": "443c1c3be6fc817673b86d0ea94120f002ebf16375643af227de1a99de9458ff"
+    },
+    {
+      "run_id": "20261117T021020Z-dcbd8543",
+      "model": "solar-mini-4-5-preview",
+      "artifact": "worker-source.py",
+      "access": "withheld-private",
+      "local_path": ".private/real-runs/20261117T021020Z-dcbd8543/worker-source.py",
+      "bytes": 6994,
+      "sha256_bytes": "0458a449f1df10874ec94c564c0f0fc3b8971e0c2a934baee956fe60e12dbe16"
+    },
+    {
+      "run_id": "20261117T021020Z-dcbd8543",
+      "model": "solar-mini-4-5-preview",
+      "artifact": "operational-summary.json",
+      "access": "withheld-private",
+      "local_path": ".private/real-runs/20261117T021020Z-dcbd8543/operational-summary.json",
+      "bytes": 1447,
+      "sha256_bytes": "3afefa218728a9630ec83d1c771190f5892b974bb925040a5bf5057df6146062"
+    },
+    {
+      "run_id": "20261117T021020Z-dcbd8543",
+      "model": "solar-mini-4-5-preview",
+      "artifact": "scores/judge-b380b795773e.json",
+      "access": "withheld-private",
+      "local_path": ".private/real-runs/20261117T021020Z-dcbd8543/scores/judge-b380b795773e.json",
+      "bytes": 2661,
+      "sha256_bytes": "650cc7920d7d15fd2a618c372b408fdde016210027d48758169fac1868f2453c"
+    },
+    {
+      "run_id": "20261117T021020Z-dcbd8543",
+      "model": "solar-mini-4-5-preview",
+      "artifact": "scores/verifier-49363ba02dd4.json",
+      "access": "withheld-private",
+      "local_path": ".private/real-runs/20261117T021020Z-dcbd8543/scores/verifier-49363ba02dd4.json",
+      "bytes": 1174,
+      "sha256_bytes": "291a8d1deadb9148eca28f899f6a3ff6480a4df61e523e19f625304b21f4d0cc"
+    },
+    {
+      "run_id": "20261117T021020Z-dcbd8543",
+      "model": "solar-mini-4-5-preview",
+      "artifact": "judge/packet-baf196c8b781.json",
+      "access": "withheld-private",
+      "local_path": ".private/real-runs/20261117T021020Z-dcbd8543/judge/packet-baf196c8b781.json",
+      "bytes": 815904,
+      "sha256_bytes": "0d816f5a439e980cca0a78ef9d84d8441abd1499f88451888d88cdff6bcf1abc"
+    },
+    {
+      "artifact": "model-input-20261117T014612Z.json",
+      "access": "withheld-private",
+      "local_path": ".private/preparation/model-input-20261117T014612Z.json",
+      "bytes": 764428,
+      "sha256_bytes": "fd481fcadd3b71c3e457868778f578dd954818c12cf66c1b1013b7fbf6032f3b"
+    },
+    {
+      "artifact": "snapshot-20261117T014612Z.json",
+      "access": "withheld-private",
+      "local_path": ".private/preparation/snapshot-20261117T014612Z.json",
+      "bytes": 6161519,
+      "sha256_bytes": "ce6f07c3dc212f3044cf37f385e8d445db717ed7aa0371c0dd82a2c88fe942a7"
+    },
+    {
+      "artifact": "prompt-v1.txt",
+      "access": "withheld-private",
+      "local_path": ".private/preparation/prompt-v1.txt",
+      "bytes": 1308,
+      "sha256_bytes": "0afa9eca37ff6a0c86edb4301e164ebee42179cfc36b4c2fcda6f1a359b76c6a"
+    },
+    {
+      "artifact": "review.json",
+      "access": "withheld-private",
+      "local_path": ".private/real-batches/20261117T021020Z/quality-20261117T023805Z/review.json",
+      "bytes": 9310,
+      "sha256_bytes": "9ccbc00978cf7cde8da23b1d0b0402494c9ba947228ad5e82ee3986dae39373a"
+    },
+    {
+      "artifact": "model-inspection.json",
+      "access": "withheld-private",
+      "local_path": ".private/real-batches/20261117T021020Z/model-inspection.json",
+      "bytes": 1298,
+      "sha256_bytes": "cae4be1aca940e28d629514da0b6468a5cfb18633455484b2e21f4ab4b110cd3"
+    },
+    {
+      "artifact": "authorization.json",
+      "access": "withheld-private",
+      "local_path": ".private/real-batches/20261117T021020Z/authorization.json",
+      "bytes": 581,
+      "sha256_bytes": "622180116174084a6a5b823d3277fe084b1a2f3e82e23982878ef8dd47e724f7"
+    },
+    {
+      "run_id": "20261117T021020Z-070a2230",
+      "model": "gpt-6-luna",
+      "artifact": "hermes-home/state.db",
+      "access": "withheld-private",
+      "local_path": ".private/real-runs/20261117T021020Z-070a2230/hermes-home/state.db",
+      "bytes": 2961408,
+      "sha256_bytes": "734df2af995edad81100908127830c50e333abba73345da9a19c30b22220a1fa"
+    },
+    {
+      "run_id": "20261117T021020Z-070a2230",
+      "model": "gpt-6-luna",
+      "artifact": "system-prompt.txt",
+      "access": "withheld-private",
+      "local_path": ".private/real-runs/20261117T021020Z-070a2230/system-prompt.txt",
+      "bytes": 2194,
+      "sha256_bytes": "322d359b7021e1c0a4a29192530bba350f74f0974cb3ef70ad66a444e7c56dcf"
+    },
+    {
+      "run_id": "20261117T021020Z-070a2230",
+      "model": "gpt-6-luna",
+      "artifact": "execution-summary.json",
+      "access": "withheld-private",
+      "local_path": ".private/real-runs/20261117T021020Z-070a2230/execution-summary.json",
+      "bytes": 903,
+      "sha256_bytes": "f6df6d517733b45afd2c5caea06dad7e138304ce5379946ea5decf4a2903bcfe"
+    },
+    {
+      "run_id": "20261117T021020Z-070a2230",
+      "model": "gpt-6-luna",
+      "artifact": "process/supervisor.json",
+      "access": "withheld-private",
+      "local_path": ".private/real-runs/20261117T021020Z-070a2230/process/supervisor.json",
+      "bytes": 300,
+      "sha256_bytes": "531a91eb16e4431bd4633a845145615cf9aeede274f843180b9f9a342c7eec37"
+    },
+    {
+      "run_id": "20261117T021020Z-95034163",
+      "model": "gpt-6.1-terra",
+      "artifact": "hermes-home/state.db",
+      "access": "withheld-private",
+      "local_path": ".private/real-runs/20261117T021020Z-95034163/hermes-home/state.db",
+      "bytes": 2977792,
+      "sha256_bytes": "7631f96a1633523be5a96e153c0688ea3d18cad536ab016e0f8d303e38a0307d"
+    },
+    {
+      "run_id": "20261117T021020Z-95034163",
+      "model": "gpt-6.1-terra",
+      "artifact": "system-prompt.txt",
+      "access": "withheld-private",
+      "local_path": ".private/real-runs/20261117T021020Z-95034163/system-prompt.txt",
+      "bytes": 2197,
+      "sha256_bytes": "b9d32c9fd382e186a78c398e0befd3d1bd15cc9b5800fc2bac249ae94d34cad0"
+    },
+    {
+      "run_id": "20261117T021020Z-95034163",
+      "model": "gpt-6.1-terra",
+      "artifact": "execution-summary.json",
+      "access": "withheld-private",
+      "local_path": ".private/real-runs/20261117T021020Z-95034163/execution-summary.json",
+      "bytes": 905,
+      "sha256_bytes": "b6a14d82209fa8e784ca026c9ebcae8c452245f3bf8b3ea4ab810eb92f438801"
+    },
+    {
+      "run_id": "20261117T021020Z-95034163",
+      "model": "gpt-6.1-terra",
+      "artifact": "process/supervisor.json",
+      "access": "withheld-private",
+      "local_path": ".private/real-runs/20261117T021020Z-95034163/process/supervisor.json",
+      "bytes": 300,
+      "sha256_bytes": "4aaeb6ce0a02315ac38dca6bab62680f7b9b69b5cdf48f6aeeae48543512c078"
+    },
+    {
+      "run_id": "20261117T021020Z-dcbd8543",
+      "model": "solar-mini-4-5-preview",
+      "artifact": "hermes-home/state.db",
+      "access": "withheld-private",
+      "local_path": ".private/real-runs/20261117T021020Z-dcbd8543/hermes-home/state.db",
+      "bytes": 2969600,
+      "sha256_bytes": "df24ab6211807bf2b9a1426f02ffba59e74eee8116dc9c0baba2b493afdd9e1d"
+    },
+    {
+      "run_id": "20261117T021020Z-dcbd8543",
+      "model": "solar-mini-4-5-preview",
+      "artifact": "system-prompt.txt",
+      "access": "withheld-private",
+      "local_path": ".private/real-runs/20261117T021020Z-dcbd8543/system-prompt.txt",
+      "bytes": 2204,
+      "sha256_bytes": "b9ff30e86fe89a3e08c1c39dac3d687e52c8475f59f4710f5841be7826bcf0ec"
+    },
+    {
+      "run_id": "20261117T021020Z-dcbd8543",
+      "model": "solar-mini-4-5-preview",
+      "artifact": "execution-summary.json",
+      "access": "withheld-private",
+      "local_path": ".private/real-runs/20261117T021020Z-dcbd8543/execution-summary.json",
+      "bytes": 905,
+      "sha256_bytes": "c3973884cb8f9fe881f874ed6ab278dd193810a6ab3b11765c4486ab5c72dc41"
+    },
+    {
+      "run_id": "20261117T021020Z-dcbd8543",
+      "model": "solar-mini-4-5-preview",
+      "artifact": "process/supervisor.json",
+      "access": "withheld-private",
+      "local_path": ".private/real-runs/20261117T021020Z-dcbd8543/process/supervisor.json",
+      "bytes": 300,
+      "sha256_bytes": "a2bcbb4d93f80c309076ca6a6d54b7e4ef0f4f1236cfa099579a9f7640445c85"
+    },
+    {
+      "run_id": "20261117T020809Z-d582ee71",
+      "model": "gpt-6-luna",
+      "run_class": "infrastructure-aborted-excluded-from-completed-batch",
+      "artifact": "manifest.json",
+      "access": "withheld-private",
+      "local_path": ".private/real-runs/20261117T020809Z-d582ee71/manifest.json",
+      "bytes": 699,
+      "sha256_bytes": "60d0efb234e19cac24760792fde6ae1d8e32b9e0b389b8ad23cad98adbf4c0ed"
+    },
+    {
+      "run_id": "20261117T020809Z-d582ee71",
+      "model": "gpt-6-luna",
+      "run_class": "infrastructure-aborted-excluded-from-completed-batch",
+      "artifact": "attempts.json",
+      "access": "withheld-private",
+      "local_path": ".private/real-runs/20261117T020809Z-d582ee71/attempts.json",
+      "bytes": 6861,
+      "sha256_bytes": "a7b99fa0311457cb4943bb4e0fd8097b6c2db90bd96eb25fa7bea7254255af0c"
+    },
+    {
+      "run_id": "20261117T020809Z-d582ee71",
+      "model": "gpt-6-luna",
+      "run_class": "infrastructure-aborted-excluded-from-completed-batch",
+      "artifact": "operator-intervention.json",
+      "access": "withheld-private",
+      "local_path": ".private/real-runs/20261117T020809Z-d582ee71/operator-intervention.json",
+      "bytes": 167,
+      "sha256_bytes": "23afa91c3227dfc3c2568e257462902fbd1e777e21a9fc0ce6c5330390d2bc4f"
+    },
+    {
+      "run_id": "20261117T020809Z-83ad794a",
+      "model": "gpt-6.1-terra",
+      "run_class": "infrastructure-aborted-excluded-from-completed-batch",
+      "artifact": "manifest.json",
+      "access": "withheld-private",
+      "local_path": ".private/real-runs/20261117T020809Z-83ad794a/manifest.json",
+      "bytes": 702,
+      "sha256_bytes": "44f1c1fc8bc6c4abd0b42ff743f1c2c2ef0f7db347644968401d8e522993ccf9"
+    },
+    {
+      "run_id": "20261117T020809Z-83ad794a",
+      "model": "gpt-6.1-terra",
+      "run_class": "infrastructure-aborted-excluded-from-completed-batch",
+      "artifact": "attempts.json",
+      "access": "withheld-private",
+      "local_path": ".private/real-runs/20261117T020809Z-83ad794a/attempts.json",
+      "bytes": 6937,
+      "sha256_bytes": "c1a9648ac4cc2b484058fd5e550fe780504f12d9e5f57f38780b20b6d0b2a08c"
+    },
+    {
+      "run_id": "20261117T020809Z-83ad794a",
+      "model": "gpt-6.1-terra",
+      "run_class": "infrastructure-aborted-excluded-from-completed-batch",
+      "artifact": "operator-intervention.json",
+      "access": "withheld-private",
+      "local_path": ".private/real-runs/20261117T020809Z-83ad794a/operator-intervention.json",
+      "bytes": 167,
+      "sha256_bytes": "23afa91c3227dfc3c2568e257462902fbd1e777e21a9fc0ce6c5330390d2bc4f"
+    }
+  ]
+}

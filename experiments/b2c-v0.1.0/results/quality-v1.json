@@ -1,0 +1,213 @@
+{
+  "schema_version": "1",
+  "experiment_version": "b2c-v0.1.0",
+  "scoring_version": "personal-briefing-manual-review-v1",
+  "judge_model": "gpt-6.1-sol (current Codex session; self-reported)",
+  "new_external_judge_calls": 0,
+  "blinded": false,
+  "human_reference_calibrated": false,
+  "scoring_anchors": {
+    "1": "Dimension substantially satisfied within observed scope; no material defect found, not a claim of perfection",
+    "0.5": "Useful partial performance with material omission or prioritization concern",
+    "0": "Material unsupported claims or failure to follow the dimension",
+    "null": "Insufficient evidence"
+  },
+  "limitations": [
+    "Single post-hoc Codex reviewer, gpt-6.1-sol; reviewer prepared the harness and already saw model identities. Not blinded or independent human calibration.",
+    "Source index for all 69 mails and all 16 calendar entries screened; detailed reading focused on actionable mail and disputed claims. This is not a proof of exhaustive recall.",
+    "Human importance reference is unfilled. Subjective priority scores are provisional, and unflagged items are not automatically failures.",
+    "Input mail-032 contains severe mojibake; unsupported reconstruction is penalized, inability to recover corrupted text is not. Calendar all-day type is not explicitly retained in the normalized input.",
+    "No new provider or external judge API was invoked; this current Codex conversation performs the review.",
+    "Required live-service state checks remain unknown. Quality dimensions and overall task verification must be read separately."
+  ],
+  "rows": [
+    {
+      "model": "gpt-6-luna",
+      "scores": {
+        "coverage": 0.5,
+        "prioritization": 0.5,
+        "grounding": 1
+      },
+      "overall_verdict": "unknown",
+      "quality_conclusion": "Useful concise draft with omissions and provisional priority concerns",
+      "findings": [
+        {
+          "id": "L1",
+          "severity": "moderate",
+          "source_ids": [
+            "mail-057"
+          ],
+          "finding": "Delivery failure notice is omitted. It is a concrete unresolved communication candidate, although the importance of the original message cannot be known without its content. Do not assume all omitted items were important.",
+          "event_ids": [
+            "hermes-message-1",
+            "hermes-message-2"
+          ]
+        },
+        {
+          "id": "L2",
+          "severity": "provisional-priority",
+          "source_ids": [
+            "mail-059",
+            "mail-029",
+            "calendar-002"
+          ],
+          "finding": "Expired-or-uncertain payment is first and a third-party meeting action is second, ahead of the imminent 13:00 event. This is a provisional prioritization concern, not an objective preference violation.",
+          "event_ids": [
+            "hermes-message-1",
+            "hermes-message-2"
+          ]
+        },
+        {
+          "id": "L3",
+          "severity": "positive",
+          "source_ids": [
+            "mail-032",
+            "mail-059",
+            "calendar-012"
+          ],
+          "finding": "Flags corrupted settlement text, unknown payment state and an unspecified submission time instead of inventing a precise deadline. Payment advice checks order state before deciding.",
+          "event_ids": [
+            "hermes-message-1",
+            "hermes-message-2"
+          ]
+        }
+      ],
+      "run_id": "20261117T021020Z-070a2230"
+    },
+    {
+      "model": "gpt-6.1-terra",
+      "scores": {
+        "coverage": 1,
+        "prioritization": 1,
+        "grounding": 1
+      },
+      "overall_verdict": "unknown",
+      "quality_conclusion": "Strongest answer in this reviewed single case; user usefulness not calibrated",
+      "findings": [
+        {
+          "id": "T1",
+          "severity": "positive",
+          "source_ids": [
+            "mail-057",
+            "mail-013",
+            "mail-045",
+            "mail-051",
+            "calendar-002",
+            "calendar-012"
+          ],
+          "finding": "Finds the failed delivery, groups repeated payment failures, prioritizes imminent event and submission, and gives specific next checks.",
+          "event_ids": [
+            "hermes-message-1",
+            "hermes-message-2"
+          ]
+        },
+        {
+          "id": "T2",
+          "severity": "positive",
+          "source_ids": [
+            "mail-059",
+            "mail-029",
+            "calendar-009",
+            "calendar-010"
+          ],
+          "finding": "Labels the 24-hour calculation as based on send time with uncertain starting point; distinguishes meeting-summary ownership ambiguity; treats office-day overlap as a possible issue rather than a confirmed conflict.",
+          "event_ids": [
+            "hermes-message-1",
+            "hermes-message-2"
+          ]
+        },
+        {
+          "id": "T3",
+          "severity": "minor-uncertainty",
+          "source_ids": [
+            "mail-028",
+            "mail-006"
+          ],
+          "finding": "Subscription change and a next-month terms notice add optional review items that may be unnecessary for this user. The claim about notice/terms inconsistency needs table-layout interpretation and is not treated as a verified legal conclusion.",
+          "event_ids": [
+            "hermes-message-1",
+            "hermes-message-2"
+          ]
+        }
+      ],
+      "run_id": "20261117T021020Z-95034163"
+    },
+    {
+      "model": "solar-mini-4-5-preview",
+      "scores": {
+        "coverage": 0.5,
+        "prioritization": 0,
+        "grounding": 0
+      },
+      "overall_verdict": "fail",
+      "quality_conclusion": "Not suitable as-is due to material factual and deadline errors",
+      "findings": [
+        {
+          "id": "S1",
+          "severity": "major",
+          "source_ids": [
+            "mail-032"
+          ],
+          "finding": "Turns a visible payment date into an overdue reply deadline and changes an employment-end date. The supplied input does not establish the asserted reply deadline. Exact private dates are withheld.",
+          "event_ids": [
+            "hermes-message-1",
+            "hermes-message-2"
+          ]
+        },
+        {
+          "id": "S2",
+          "severity": "major",
+          "source_ids": [
+            "mail-032",
+            "mail-057"
+          ],
+          "finding": "Links a bounced message to a separate settlement notice and calls them same-day. Source dates differ and the bounce has no original subject/body establishing that connection. Exact private dates are withheld.",
+          "event_ids": [
+            "hermes-message-1",
+            "hermes-message-2"
+          ]
+        },
+        {
+          "id": "S3",
+          "severity": "major",
+          "source_ids": [
+            "mail-059"
+          ],
+          "finding": "Says payment is required today although the stated relative deadline may already have passed and order/payment/cancellation state is unknown. Verify current state before recommending a transfer. No transfer occurred.",
+          "event_ids": [
+            "hermes-message-1",
+            "hermes-message-2"
+          ]
+        },
+        {
+          "id": "S4",
+          "severity": "major",
+          "source_ids": [
+            "calendar-002",
+            "calendar-003"
+          ],
+          "finding": "Lists the 18:00 dinner in its table, then concludes the 13:00 event is the only event today. This contradicts both input and its own answer.",
+          "event_ids": [
+            "hermes-message-1",
+            "hermes-message-2"
+          ]
+        },
+        {
+          "id": "S5",
+          "severity": "moderate",
+          "source_ids": [
+            "mail-024",
+            "mail-028",
+            "calendar-012"
+          ],
+          "finding": "Expands to near-complete calendar listing and low-value promotion/networking mentions despite concise selective briefing instruction; urges a next-month terms decision today without a supplied urgency reason. Submission appears in a table without the focused next-action treatment given by GPT models.",
+          "event_ids": [
+            "hermes-message-1",
+            "hermes-message-2"
+          ]
+        }
+      ],
+      "run_id": "20261117T021020Z-dcbd8543"
+    }
+  ]
+}

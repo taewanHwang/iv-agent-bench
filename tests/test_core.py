@@ -1,3 +1,4 @@
+from contextlib import closing
 import json
 import sqlite3
 import tempfile
@@ -17,7 +18,7 @@ class BenchTests(unittest.TestCase):
         self.run = init_run(BASE / 'tasks/calendar-conflict-proposal.json', self.root / 'runs',
                             'test', 'test', 'default', 'synthetic', True)
         self.db = self.root / 'state.db'
-        with sqlite3.connect(self.db) as db:
+        with closing(sqlite3.connect(self.db)) as db, db:
             db.executescript('''CREATE TABLE sessions(id TEXT, model TEXT, system_prompt TEXT);
             CREATE TABLE messages(id INTEGER,session_id TEXT,role TEXT,content TEXT,timestamp REAL,
             tool_calls TEXT, reasoning TEXT,active INTEGER,compacted INTEGER);

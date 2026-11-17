@@ -1,0 +1,17 @@
+{
+  "schema_version": "1",
+  "experiments": [
+    {
+      "experiment_version": "b2c-v0.1.0",
+      "manifest": "b2c-v0.1.0/experiment.json",
+      "report": "b2c-v0.1.0/README.md",
+      "executed_at": "2026-11-17T11:10:20+09:00",
+      "suite_id": "b2c-pilot",
+      "scenario_count": 1,
+      "completed_runs": 3,
+      "status": "completed-pilot-not-calibrated",
+      "sharing_level": "summary-only",
+      "summary": "Terra strongest in this single reviewed case; Luna concise and cautious with omissions/priority concerns; Solar has material deadline/factual errors. All three returned normally; live-service state remains unknown."
+    }
+  ]
+}
