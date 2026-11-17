@@ -4,6 +4,12 @@
 
 > 작성일: 2026-11-17. 현재 상태는 설계 및 README 초안입니다. 아래 기능과 일정은 구현 완료를 뜻하지 않으며, 월별 계획은 실험 결과에 따라 조정합니다.
 
+## Executive Summary
+
+![IV Agent Bench Executive Summary: 목적, 평가 설계, 개인 로컬 실행과 GitHub 공동 분석, 월별 로드맵](docs/assets/iv-agent-bench-executive-summary.png)
+
+[원본 이미지 보기](docs/assets/iv-agent-bench-executive-summary.png)
+
 ## 왜 만드는가
 
 모델 벤치마크 점수만으로는 개인 비서의 유용성을 판단하기 어렵습니다. 사용자는 정확한 답변뿐 아니라 메일 처리, 일정 조율, 후속 작업 완료, 개인 선호의 기억, 필요한 순간의 선제적 제안을 기대합니다. 반대로 불필요한 알림이나 승인 없는 행동은 신뢰를 훼손합니다.
