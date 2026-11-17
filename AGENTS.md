@@ -10,3 +10,5 @@
 - Preserve task/run/scoring versions. Re-scoring creates a new result. Never silently replace raw trajectories or historical scores.
 - Synthetic examples test the evaluation pipeline, not model performance. Label them accordingly.
 - Validate changes with `python3 -m unittest discover -s tests -v` and the documented demo. Do not call paid APIs or write to real services during these checks.
+
+- While this repository is used by its owner alone, publish authorized changes directly to `main` without opening a PR. Run the documented checks first. Private-data review and `.private/` exclusions still apply.
