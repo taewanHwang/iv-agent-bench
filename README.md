@@ -2,13 +2,24 @@
 
 개인형 AI 에이전트가 실제 생활에서 얼마나 유용하게 일하는지 평가하고, 그 실행 근거를 함께 분석하기 위한 프로젝트입니다.
 
-> 작성일: 2026-11-17. 현재 상태는 설계 및 README 초안입니다. 아래 기능과 일정은 구현 완료를 뜻하지 않으며, 월별 계획은 실험 결과에 따라 조정합니다.
+> 작성일: 2026-11-17. 현재 상태는 로컬 평가 기록·채점 도구 v0.1입니다. 실제 서비스 연결 및 모델 비교는 아직 실행하지 않았습니다. 월별 계획은 실험 결과에 따라 조정합니다.
 
 ## Executive Summary
 
 ![IV Agent Bench Executive Summary: 목적, 평가 설계, 개인 로컬 실행과 GitHub 공동 분석, 월별 로드맵](docs/assets/iv-agent-bench-executive-summary.png)
 
 [원본 이미지 보기](docs/assets/iv-agent-bench-executive-summary.png)
+
+## 개발 시작: 로컬 v0.1
+
+[로컬 실행 절차](docs/local-workflow.md) · [구현 현황과 다음 단계](docs/implementation-status.md) · [과제 후보의 출처](research/scenario-candidates.md)
+
+```zsh
+python3 -m unittest discover -s tests -v
+python3 -m iv_agent_bench demo
+```
+
+Python 3.9 이상에서 추가 의존성 없이 동작합니다. Demo는 합성 데이터로 기록·검증·judge 자료 생성만 확인하며, 모델 성능 결과가 아닙니다. 현재 CLI는 Hermes를 자동 실행하거나 개인 계정에 연결하지 않습니다. 실제 실행 후 지정 세션을 읽기 전용으로 가져와 독립 관찰과 수동 LLM 평가를 연결합니다. 개인 원본은 Git에서 제외되는 `.private/`에 보관합니다.
 
 ## 왜 만드는가
 
@@ -98,22 +109,22 @@ LLM judge는 최종 답변만이 아니라 전체 trajectory와 verifier 결과�
 
 성공당 비용에는 실패 시도의 비용도 포함하며 성공이 없으면 N/A입니다. 시간 초과는 운영상 실패로 집계하되 원인을 구분합니다. 반복 횟수와 조건 차이를 표시하고, 초기에는 임의의 종합 순위 하나로 축약하지 않습니다.
 
-## 예정 디렉터리
+## 디렉터리
 
-아래는 계획이며 아직 생성·구현되지 않았습니다.
+현재 과제·CLI·검증기·문서가 생성되었습니다. 공유용 runs/와 analyses/는 실제 검토된 결과가 생길 때 추가합니다.
 
 ```text
 AGENTS.md          # Codex 실행·분석 지침
 .env.example       # 비밀값 없는 설정 예시
 research/          # 출처 목록과 시나리오 선정 근거
 tasks/             # 과제·데이터·허용 행동·판정 기준
-runner/            # 실행 연결과 기록 수집
-evaluators/        # 상태·도구 verifier, judge
+iv_agent_bench/    # 로컬 CLI·Hermes import·상태 verifier·judge 연결
+tests/             # 합성 데이터 기반 검증
 runs/              # 검토된 공유본·설정·점수
 analyses/          # 작성자별 분석
 ```
 
-비공개 원자료는 Git 추적 대상 밖에 둡니다. 실행 명령·설치 지침은 실제 구현과 검증 후 추가합니다.
+비공개 원자료는 Git 추적 대상 밖에 둡니다. 현재 실행 지침은 [로컬 평가 절차](docs/local-workflow.md)에 있습니다.
 
 ## 로드맵 초안
 

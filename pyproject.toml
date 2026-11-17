@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "iv-agent-bench"
+version = "0.1.0"
+description = "Local-first personal agent trajectory evaluation"
+requires-python = ">=3.9"
+dependencies = []
+
+[project.scripts]
+iv-bench = "iv_agent_bench.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["iv_agent_bench*"]
